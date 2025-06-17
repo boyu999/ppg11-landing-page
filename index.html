@@ -1,191 +1,187 @@
 <!DOCTYPE html>
 <html lang="my">
 <head>
-  <meta charset="UTF-8" />
-  <title>PPG11 Landing Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-    }
-
-    header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img.logo {
-      height: 100px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-size: 42px;
-      color: gold;
-      margin: 5px 0;
-    }
-
-    h2 {
-      font-size: 18px;
-      color: cyan;
-      margin-bottom: 10px;
-    }
-
-    .highlight-box {
-      background: yellow;
-      color: black;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-      margin: 20px auto 10px;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 12px;
-      font-size: 22px;
-    }
-
-    .highlight-box a {
-      color: red;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .contact-section {
-      background-color: #1c2b3a;  /* 更协调的深蓝色 */
-      padding: 15px 10px;
-      margin: 20px auto;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 380px;
-      text-align: center;
-    }
-
-    .contact-section h3 {
-      color: gold;
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-
-    .contact-icons img {
-       width: 60px;
-       height: 60px;
-       object-fit: contain;
-       margin: 8px;
-    }
-
-    .hotline {
-      color: #ffff00;
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 12px;
-    }
-
-    .game-section {
-      text-align: center;
-      font-size: 22px;
-      margin-top: 20px;
-    }
-
-    .game-section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .game-section li {
-      margin: 8px 0;
-    }
-
-    .promo-gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      padding: 20px 10px;
-    }
-
-    .promo-gallery img {
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-    }
-
-    .description {
-      background: rgba(255, 255, 255, 0.1);
-      border-left: 5px solid cyan;
-      padding: 20px;
-      margin: 20px;
-      border-radius: 10px;
-      font-size: 18px;
-    }
-
-    footer {
-      display: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>PPG11 Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+        header {
+            background-color: #000;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+        header img.logo {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 48px;
+            color: gold;
+            margin: 0;
+        }
+        h2 {
+            color: cyan;
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 22px;
+        }
+        .highlight-box {
+            background: yellow;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: fit-content;
+            border-radius: 12px;
+            font-size: 24px;
+        }
+        .highlight-box a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+            display: inline-block;
+            font-size: 22px;
+        }
+        .contact-block {
+            background: rgba(255, 255, 255, 0.08);
+            border-left: 5px solid gold;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .contact-block h3 {
+            color: gold;
+            margin-bottom: 15px;
+        }
+        .contact-block ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-block li {
+            margin-bottom: 12px;
+            color: white;
+        }
+        .contact-block a {
+            color: #00FFFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .contact-block a:hover {
+            text-decoration: underline;
+        }
+        .game-section {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .game-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .game-section li {
+            margin: 8px 0;
+        }
+        .promo-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+        .promo-gallery img {
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .description {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid cyan;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="ppg11-logo.png" alt="PPG11 Logo" class="logo" />
-    <h1>PPG11</h1>
-    <h2>အွန်လိုင်းဂိမ်းကစားမယ်ဆို PPG11 ကိုသာရွေးချယ်လိုက်ပါ</h2>
-  </header>
+    <header>
+        <img src="ppg11-logo.png" alt="PPG11 Logo" class="logo">
+        <h1>PPG11</h1>
+        <h2>အွန်လိုင်းဂိမ်းကစားမယ်ဆို PPG11 ကိုသာရွေးချယ်လိုက်ပါ</h2>
+    </header>
 
-  <div class="highlight-box">
-    မန်ဘာသစ် ဖရီး ၃၀၀၀ ကျပ် <br />
-    <a href="https://ppg11.com">👉 Get Now 👈</a>
-  </div>
-
-  <div class="contact-section">
-    <h3>📞 ဆက်သွယ်ရန်</h3>
-    <div class="contact-icons">
-      <a href="https://t.me/ppg11vipBot"><img src="telegram.png" alt="Telegram" /></a>
-      <a href="https://cutt.ly/ppgvb"><img src="viber.png" alt="Viber" /></a>
-      <a href="https://www.facebook.com/profile.php?id=61550626169163"><img src="facebook.png" alt="Facebook" /></a>
+    <div class="highlight-box">
+        မန်ဘာသစ် ဖရီး ၃၀၀၀ ကျပ် 
+        👉 <a href="https://ppg11.com" target="_blank">Get Now</a>
     </div>
-    <div class="hotline">Hotline: 09778891168</div>
-  </div>
 
-  <div class="game-section">
-    <h3>🎮 ကစားနိုင်သောဂိမ်းများ:</h3>
-    <ul>
-      <li>🎰 စလော့ဂိမ်းများ (Slots)</li>
-      <li>🐟 ငါးပမ်းဂိမ်းများ</li>
-      <li>⚽ အားကစား (Sports Betting)</li>
-      <li>🃏 Live Casino ဂိမ်းများ</li>
-      <li>🎲 Mini Game များ</li>
-    </ul>
-  </div>
+    <!-- Contact Info Block -->
+    <div class="contact-block">
+        <h3>📞 ဆက်သွယ်ရန်</h3>
+        <ul>
+            <li>Telegram - <a href="https://t.me/ppg11vipBot" target="_blank">နှိပ်ပါ</a></li>
+            <li>Viber - <a href="https://cutt.ly/ppgvb" target="_blank">နှိပ်ပါ</a></li>
+            <li>Facebook - <a href="https://www.facebook.com/profile.php?id=61550626169163" target="_blank">နှိပ်ပါ</a></li>
+            <li>Hotline - <span style="color: #FFD700; font-weight: bold;">09778891168</span></li>
+        </ul>
+    </div>
 
-  <div class="promo-gallery">
-    <img src="promo1.jpg" alt="Promo 1" />
-    <img src="promo2.jpg" alt="Promo 2" />
-    <img src="promo3.jpg" alt="Promo 3" />
-    <img src="promo4.jpg" alt="Promo 4" />
-    <img src="promo5.jpg" alt="Promo 5" />
-    <img src="promo6.jpg" alt="Promo 6" />
-    <img src="promo7.png" alt="Promo 7" />
-    <img src="promo8.png" alt="Promo 8" />
-    <img src="promo9.png" alt="Promo 9" />
-    <img src="promo10.jpg" alt="Promo 10" />
-    <img src="promo11.jpg" alt="Promo 11" />
-    <img src="promo12.jpg" alt="Promo 12" />
-  </div>
+    <div class="game-section">
+        <h3>🎮 ကစားနိုင်သောဂိမ်းများ:</h3>
+        <ul>
+            <li>🎰 စလော့ဂိမ်းများ (Slots)</li>
+            <li>🐟 ငါးဖမ်းဂိမ်းများ</li>
+            <li>⚽ အားကစား (Sports Betting)</li>
+            <li>🃏 Live Casino ဂိမ်းများ</li>
+            <li>🎲 Mini Game များ</li>
+        </ul>
+    </div>
 
-  <div class="description">
-    <h3>💡 PPG11 ဆိုတာဘာလဲ?</h3>
-    <p>
-      PPG11 သည် ၃ နှစ်ကျော်အတွင်းအကြီးမားဆုံးကမ္ဘာတစ်ဝှမ်းမှသူငယ်ချင်းများကြားအကြိုက်ဆုံး Slot, ငါးဖမ်း, အားကစားလောင်းကစားနှင့် Live Casino များပါဝင်သော ပြိုင်ဆိုင်မှုများကိုဖော်ဆောင်ပေးသော platform တစ်ခုဖြစ်သည်။
-    </p>
-    <p>
-      ပုံမှန်ပြုလုပ်သောထူးခြားသော Promotion များ၊ Telegram၊ Viber နှင့် Facebook တို့မှတဆင့် အချိန်မရွေး customer support စောင့်ဆိုင်းနေပါသည်။
-    </p>
-    <p>
-      ယခုကြည့်တဲ့စျေးနှုန်းတွေနဲ့ဂိမ်းဆော့ဖို့အချိန်မှာ PPG11 ကိုသာရွေးချယ်ပါ။
-    </p>
-  </div>
+    <div class="promo-gallery">
+        <img src="promo1.jpg" alt="Promo 1">
+        <img src="promo2.jpg" alt="Promo 2">
+        <img src="promo3.jpg" alt="Promo 3">
+        <img src="promo4.jpg" alt="Promo 4">
+        <img src="promo5.jpg" alt="Promo 5">
+        <img src="promo6.jpg" alt="Promo 6">
+        <img src="promo7.png" alt="Promo 7">
+        <img src="promo8.png" alt="Promo 8">
+        <img src="promo9.png" alt="Promo 9">
+        <img src="promo10.jpg" alt="Promo 10">
+        <img src="promo11.jpg" alt="Promo 11">
+        <img src="promo12.jpg" alt="Promo 12">
+    </div>
+
+    <div class="description">
+        <h3>💡 PPG11 ဆိုတာဘာလဲ?</h3>
+        <p>
+            PPG11 သည် ၃ နှစ်ကျော်အတွင်းအကြီးမားဆုံးကမ္ဘာတစ်ဝှမ်းမှသူငယ်ချင်းများကြားအကြိုက်ဆုံး Slot, ငါးဖမ်း, အားကစားလောင်းကစားနှင့် Live Casino များပါဝင်သော ပြိုင်ဆိုင်မှုများကိုဖော်ဆောင်ပေးသော platform တစ်ခုဖြစ်သည်။
+        </p>
+        <p>
+            ပုံမှန်ပြုလုပ်သောထူးခြားသော Promotion များ၊ Telegram၊ Viber နှင့် Facebook တို့မှတဆင့် အချိန်မရွေး customer support စောင့်ဆိုင်းနေပါသည်။
+        </p>
+        <p>
+            ယခုကြည့်တဲ့စျေးနှုန်းတွေနဲ့ဂိမ်းဆော့ဖို့အချိန်မှာ PPG11 ကိုသာရွေးချယ်ပါ။
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2025 PPG11. All rights reserved.
+    </footer>
 </body>
 </html>
